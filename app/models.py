@@ -7,5 +7,5 @@ class Client(models.Model):
     aadharno = models.CharField(max_length=50)
     CheckIn = models.CharField(max_length=50)
     CheckOut = models.CharField(max_length=50)
-    city = models.CharField(max_length=50 , null=True)
-    people = models.CharField(max_length=50, null=True)
+    city = models.CharField(max_length=50 , null=True ,blank=True)
+    people = models.CharField(max_length=50, null=True ,blank=True)
